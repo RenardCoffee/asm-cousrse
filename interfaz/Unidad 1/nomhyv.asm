@@ -4,9 +4,9 @@
 .startup
 mov ah,00h ; limpia pantalla
 mov al,03h
-int 10h
+int 10h    ;10h
 ;mueve el apuntador y se imprime horizontal
-mov dh,12   ;Renglon
+mov dh,12  ;Renglon
 mov dl,40   ;Columna
 mov ah,02h ;func para imprimir un caracter
 int 10h
