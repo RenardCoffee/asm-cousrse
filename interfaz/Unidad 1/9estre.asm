@@ -19,9 +19,11 @@
 .stack 100
 .code
 .startup
-mov ah,00h ; limpia pantalla
-mov al,03h
-int 10h    ;ejecuta fun
+Borra:
+  mov ah,00h ; limpia pantalla
+  mov al,03h
+  int 10h    ;ejecuta fun
+
 ;mueve el apuntador y se imprime
 ;1
 mov dh,12  ;Renglon
